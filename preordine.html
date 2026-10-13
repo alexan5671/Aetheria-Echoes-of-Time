@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preordine - Aetheria: Echoes of Time</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <span class="logo">AETHERIA</span>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personaggi.html">Personaggi</a></li>
+            <li><a href="requisiti.html">Requisiti &amp; FAQ</a></li>
+            <li><a href="preordine.html" class="active">Preordine</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro-section">
+        <h1>Preordina la Tua Copia</h1>
+        <p>
+          Compila il modulo per prenotare la tua edizione e sbloccare i bonus
+          esclusivi per il Day One.
+        </p>
+      </section>
+
+      <section class="form-section">
+        <h2>Modulo di Registrazione Preordine</h2>
+        <form action="#" method="post" class="preorder-form">
+          <div class="form-group">
+            <label for="fullname">Nome Completo:</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Mario Rossi"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Indirizzo Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="mario.rossi@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="platform">Piattaforma desiderata:</label>
+            <select id="platform" name="platform" required>
+              <option value="">-- Seleziona Piattaforma --</option>
+              <option value="pc-steam">PC (Steam)</option>
+              <option value="pc-epic">PC (Epic Games Store)</option>
+              <option value="ps5">PlayStation 5</option>
+              <option value="xbox">Xbox Series X/S</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="edition">Edizione del gioco:</label>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="edition" value="standard" checked />
+                Standard Edition (€49.99)
+              </label>
+              <label>
+                <input type="radio" name="edition" value="deluxe" /> Deluxe
+                Edition (€69.99 - include Artbook e Colonna Sonora)
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="copies">Numero di copie:</label>
+            <input
+              type="number"
+              id="copies"
+              name="copies"
+              min="1"
+              max="5"
+              value="1"
+            />
+          </div>
+
+          <div class="form-group checkbox-group">
+            <label for="newsletter">
+              <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                value="yes"
+              />
+              Desidero ricevere la newsletter con aggiornamenti sullo sviluppo
+              del gioco.
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Note o richieste particolari:</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="4"
+              placeholder="Inserisci qui eventuali dettagli aggiuntivi..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Conferma Preordine</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2026 Aetheria Studio. Progetto scolastico sviluppato per la
+        gestione repository.
+      </p>
+    </footer>
+  </body>
+</html>
